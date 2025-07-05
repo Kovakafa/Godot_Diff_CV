@@ -1,0 +1,184 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cgn0xi5epkvvx"
+path="res://.godot/imported/output.glb-c8e783e4dd1f9fad494d80083cb4f3cb.scn"
+
+[deps]
+
+source_file="res://meshes/targets/output.glb"
+dest_files=["res://.godot/imported/output.glb-c8e783e4dd1f9fad494d80083cb4f3cb.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"meshes": {
+"GameObject_SM_Bld_Tent_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Bld_Tent_01.res"
+},
+"GameObject_SM_Item_Lantern_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Item_Lantern_01.res"
+},
+"GameObject_SM_Item_Potion_04": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Item_Potion_04.res"
+},
+"GameObject_SM_Item_Potion_05": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Item_Potion_05.res"
+},
+"GameObject_SM_Item_Potion_06": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Item_Potion_06.res"
+},
+"GameObject_SM_Prop_CampFire_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Prop_CampFire_01.res"
+},
+"GameObject_SM_Prop_CartHay_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Prop_CartHay_01.res"
+},
+"GameObject_SM_Prop_Cheese_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Prop_Cheese_01.res"
+},
+"GameObject_SM_Prop_Chest_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Prop_Chest_01.res"
+},
+"GameObject_SM_Prop_Chest_Lid_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Prop_Chest_Lid_01.res"
+},
+"GameObject_SM_Prop_Pumpkin_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Prop_Pumpkin_01.res"
+},
+"GameObject_SM_Prop_Sack_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Prop_Sack_01.res"
+},
+"GameObject_SM_Prop_Sack_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Prop_Sack_02.res"
+},
+"GameObject_SM_Prop_Sack_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Prop_Sack_03.res"
+},
+"GameObject_SM_Prop_Scroll_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Prop_Scroll_02.res"
+},
+"GameObject_SM_Prop_Statue_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Prop_Statue_01.res"
+},
+"GameObject_SM_Wep_Pickaxe_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Wep_Pickaxe_01.res"
+},
+"GameObject_SM_Wep_Zweihander_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://meshes/targets/meshes/GameObject_SM_Wep_Zweihander_01.res"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

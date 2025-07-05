@@ -1,0 +1,375 @@
+[gd_scene load_steps=36 format=3 uid="uid://cix2asm4f6qht"]
+
+[ext_resource type="Script" uid="uid://c5dxcre5hel30" path="res://scripts/capture.gd" id="1_lswn8"]
+[ext_resource type="Texture2D" uid="uid://crbv5bymqcd0i" path="res://textures/redflame_1.png" id="2_7mycd"]
+[ext_resource type="Texture2D" uid="uid://b55vasqp8jvmf" path="res://textures/redflame_3.png" id="3_272bh"]
+[ext_resource type="Texture2D" uid="uid://bne07m44jcnnt" path="res://textures/redflame_2.png" id="4_5vw27"]
+[ext_resource type="Texture2D" uid="uid://cempcxur7mhn7" path="res://textures/flame_2.png" id="5_kek77"]
+[ext_resource type="PackedScene" uid="uid://dt16hjyg0ilmd" path="res://assets/GodotExport_scene.glb" id="6_0odxb"]
+[ext_resource type="Texture2D" uid="uid://culccwql65x6e" path="res://textures/flame_1.png" id="6_4c57u"]
+[ext_resource type="ArrayMesh" uid="uid://bx74ilwn03cjr" path="res://meshes/targets/meshes/GameObject_SM_Bld_Tent_01.res" id="7_lswn8"]
+[ext_resource type="ArrayMesh" uid="uid://dv7errcmc5g6x" path="res://meshes/targets/meshes/GameObject_SM_Item_Lantern_01.res" id="8_a6jrf"]
+[ext_resource type="ArrayMesh" uid="uid://bhxo82og8pgf5" path="res://meshes/targets/meshes/GameObject_SM_Item_Potion_04.res" id="9_xuqvo"]
+[ext_resource type="ArrayMesh" uid="uid://457vj61bft21" path="res://meshes/targets/meshes/GameObject_SM_Item_Potion_05.res" id="10_qsp4k"]
+[ext_resource type="ArrayMesh" uid="uid://c3e5dbqam2ksh" path="res://meshes/targets/meshes/GameObject_SM_Item_Potion_06.res" id="11_kq58d"]
+[ext_resource type="ArrayMesh" uid="uid://du8lv1hr1pmg4" path="res://meshes/targets/meshes/GameObject_SM_Prop_CampFire_01.res" id="12_seu75"]
+[ext_resource type="ArrayMesh" uid="uid://chtiptghan3p8" path="res://meshes/targets/meshes/GameObject_SM_Prop_CartHay_01.res" id="13_htxhm"]
+[ext_resource type="ArrayMesh" uid="uid://cohe8h3503ayd" path="res://meshes/targets/meshes/GameObject_SM_Prop_Cheese_01.res" id="14_jq2sk"]
+[ext_resource type="ArrayMesh" uid="uid://pcmorta1k56j" path="res://meshes/targets/meshes/GameObject_SM_Prop_Chest_01.res" id="15_4k2k6"]
+[ext_resource type="ArrayMesh" uid="uid://cqgahd2ans2w6" path="res://meshes/targets/meshes/GameObject_SM_Prop_Chest_Lid_01.res" id="16_0rl1p"]
+[ext_resource type="ArrayMesh" uid="uid://c2c4j3vjdrybt" path="res://meshes/targets/meshes/GameObject_SM_Prop_Pumpkin_01.res" id="17_ok6jj"]
+[ext_resource type="ArrayMesh" uid="uid://fockyucoae12" path="res://meshes/targets/meshes/GameObject_SM_Prop_Scroll_02.res" id="18_facbu"]
+[ext_resource type="ArrayMesh" uid="uid://b2bp1xwd2w506" path="res://meshes/targets/meshes/GameObject_SM_Prop_Statue_01.res" id="19_b1qrp"]
+[ext_resource type="ArrayMesh" uid="uid://1b63i82l37d8" path="res://meshes/targets/meshes/GameObject_SM_Prop_Sack_01.res" id="20_come4"]
+[ext_resource type="ArrayMesh" uid="uid://do0268d6g5yfw" path="res://meshes/targets/meshes/GameObject_SM_Prop_Sack_02.res" id="21_h8e4i"]
+[ext_resource type="ArrayMesh" uid="uid://dqdw6ptva6kks" path="res://meshes/targets/meshes/GameObject_SM_Prop_Sack_03.res" id="22_4lmeg"]
+[ext_resource type="ArrayMesh" uid="uid://dbp46dttyqoia" path="res://meshes/targets/meshes/GameObject_SM_Wep_Zweihander_01.res" id="23_0cp0l"]
+[ext_resource type="ArrayMesh" uid="uid://je56mrn2s3am" path="res://meshes/targets/meshes/GameObject_SM_Wep_Pickaxe_01.res" id="24_d2t1y"]
+[ext_resource type="Script" uid="uid://blirvfwtg22o0" path="res://scripts/Player.gd" id="25_gngh3"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ig7tw"]
+
+[sub_resource type="Sky" id="Sky_0xm2m"]
+sky_material = SubResource("ProceduralSkyMaterial_ig7tw")
+process_mode = 1
+
+[sub_resource type="Environment" id="Environment_h2yge"]
+background_mode = 2
+sky = SubResource("Sky_0xm2m")
+ambient_light_sky_contribution = 0.5
+ambient_light_energy = 1.3
+tonemap_exposure = 1.2
+tonemap_white = 2.2
+ssr_fade_in = 0.219612
+ssr_fade_out = 3.13834
+ssr_depth_tolerance = 1.81
+ssao_enabled = true
+ssao_intensity = 1.75
+ssao_power = 2.35375
+ssao_detail = 3.0
+ssao_horizon = 0.03
+ssil_enabled = true
+ssil_radius = 1.0
+ssil_intensity = 0.01
+ssil_sharpness = 1.0
+sdfgi_bounce_feedback = 0.17
+glow_enabled = true
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0.461949, 0.49656, 0.550954, 1)
+fog_light_energy = 1.25
+fog_sun_scatter = 0.15
+fog_density = 0.8
+fog_sky_affect = 0.5
+fog_height = 0.5
+fog_depth_curve = 0.68302
+volumetric_fog_density = 0.0015
+adjustment_enabled = true
+adjustment_brightness = 1.1
+adjustment_contrast = 1.2
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_efxa6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7mycd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_272bh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5vw27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_272bh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_272bh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_272bh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5vw27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_272bh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dg77c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_kek77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_4c57u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_4c57u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_kek77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_4c57u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_4c57u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_kek77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_4c57u")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0odxb"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_lswn8"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0n3wm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0odxb"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_lswn8")
+camera_path = NodePath("Player/Head/Camera3D")
+interactive_path = NodePath("interactions")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.999743, 0.0163199, -0.0157599, 0, 0.694658, 0.71934, 0.0226873, 0.719155, -0.69448, 0, 0, 0)
+shadow_enabled = true
+directional_shadow_split_1 = 0.064
+directional_shadow_max_distance = 315.0
+directional_shadow_pancake_size = 5.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_h2yge")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(0.0339379, 0.459916, 0.887313, -0.980936, -0.154652, 0.117679, 0.191347, -0.874391, 0.4459, 2.39628, 0.871837, 62.359)
+light_color = Color(0.61, 0.376167, 0, 1)
+light_energy = 1.7
+distance_fade_enabled = true
+omni_range = 3.258
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="OmniLight3D"]
+transform = Transform3D(-0.039787, -0.0859949, -0.00204184, 0.0858555, -0.0398388, 0.00490084, -0.00530507, 0.000207688, 0.0946261, 0.156435, -0.0301476, 0.021265)
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_efxa6")
+frame_progress = 0.727208
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="."]
+transform = Transform3D(0.0339379, 0.459916, 0.887313, -0.980936, -0.154652, 0.117679, 0.191347, -0.874391, 0.4459, -0.141738, -0.177729, 54.9366)
+light_color = Color(0.61, 0.376167, 0, 1)
+light_energy = 2.457
+distance_fade_enabled = true
+omni_range = 5.763
+omni_attenuation = 1.24
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="OmniLight3D5"]
+transform = Transform3D(-0.0863006, -0.138028, -0.00298554, 0.186226, -0.0639441, 0.00716593, -0.011507, 0.000333321, 0.138361, 0.226059, -0.0457001, 0.106701)
+flip_h = true
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_efxa6")
+frame_progress = 0.984978
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(0.842838, 0, 0.538168, 0, 1, 0, -0.538168, 0, 0.842838, -6.06059, 3.25333, 64.8058)
+light_color = Color(0.52, 0.454653, 0.3848, 1)
+light_energy = 1.51
+light_specular = 1.0
+omni_range = 5.074
+omni_attenuation = 1.237
+omni_shadow_mode = 0
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="."]
+transform = Transform3D(0.842838, 0, 0.538168, 0, 1, 0, -0.538168, 0, 0.842838, -6.92164, -0.717513, 40.422)
+light_color = Color(0.52, 0.454653, 0.3848, 1)
+light_energy = 1.395
+light_specular = 1.0
+omni_range = 1.444
+omni_attenuation = -1.353
+omni_shadow_mode = 0
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="."]
+transform = Transform3D(0.842838, 0, 0.538168, 0, 1, 0, -0.538168, 0, 0.842838, -1.209, 2.46514, 62.8512)
+light_color = Color(0.52, 0.454653, 0.3848, 1)
+light_energy = 1.51
+light_specular = 1.0
+omni_range = 5.074
+omni_attenuation = 1.237
+omni_shadow_mode = 0
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="."]
+transform = Transform3D(0.842838, 0, 0.538168, 0, 1, 0, -0.538168, 0, 0.842838, -8.43778, 2.98235, 54.1934)
+light_color = Color(2.31028e-06, 0.606163, 0.607431, 1)
+light_energy = 1.7
+distance_fade_enabled = true
+omni_range = 3.258
+
+[node name="AnimatedSprite3D2" type="AnimatedSprite3D" parent="OmniLight3D3"]
+transform = Transform3D(-0.0327143, -0.0631296, -0.00192729, 0.0705936, -0.029246, 0.00462589, -0.00436203, 0.000152459, 0.0893174, 0.0209923, 0.0108755, 0.0137024)
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_dg77c")
+frame_progress = 0.0416954
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="."]
+transform = Transform3D(0.842838, 0, 0.538168, 0, 1, 0, -0.538168, 0, 0.842838, -2.80031, 3.05051, 48.7485)
+light_color = Color(2.31028e-06, 0.606163, 0.607431, 1)
+light_energy = 1.7
+distance_fade_enabled = true
+omni_range = 3.258
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="OmniLight3D4"]
+transform = Transform3D(-0.0315216, -0.0681303, -0.00161767, 0.0680199, -0.0315627, 0.00388274, -0.004203, 0.000164548, 0.0749685, 0.0188255, 0.0391896, -0.0369453)
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_dg77c")
+frame_progress = 0.717138
+
+[node name="GodotExport2" parent="." instance=ExtResource("6_0odxb")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GodotExport2"]
+physics_material_override = SubResource("PhysicsMaterial_0odxb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GodotExport2/StaticBody3D"]
+shape = SubResource("WorldBoundaryShape3D_lswn8")
+
+[node name="interactions" type="Node3D" parent="."]
+
+[node name="tent" type="MeshInstance3D" parent="interactions"]
+transform = Transform3D(-0.996888, 0.0742836, -0.0263936, 0.0752966, 0.99637, -0.0397174, 0.0233475, -0.0415811, -0.998863, -15.4909, -1.30767, 45.6773)
+mesh = ExtResource("7_lswn8")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="lantern" type="MeshInstance3D" parent="interactions"]
+transform = Transform3D(0.947502, 0.0116343, -0.319539, 0.0110838, 0.997542, 0.0691859, 0.319559, -0.0690955, 0.945044, -4.84873, 0.978507, 64.8586)
+mesh = ExtResource("8_a6jrf")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="pot1" type="MeshInstance3D" parent="interactions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.99779, 1.94594, 66.0238)
+mesh = ExtResource("9_xuqvo")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="pot2" type="MeshInstance3D" parent="interactions"]
+transform = Transform3D(0.812358, 0, -0.583158, 0, 1, 0, 0.583158, 0, 0.812358, -5.24629, 1.93112, 65.9344)
+mesh = ExtResource("10_qsp4k")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="pot3" type="MeshInstance3D" parent="interactions"]
+transform = Transform3D(1, 0, 0, 0, 0.985659, 0.168747, 0, -0.168747, 0.985659, -5.00868, 1.9319, 65.798)
+mesh = ExtResource("11_kq58d")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="campfire" type="MeshInstance3D" parent="interactions"]
+transform = Transform3D(1.56102, 0, 0, 0, 1.56102, 0, 0, 0, 1.56102, 0.0342594, -0.889456, 55.0421)
+mesh = ExtResource("12_seu75")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="cart" type="MeshInstance3D" parent="interactions"]
+transform = Transform3D(0.657785, -0.0770558, 0.749253, -0.190839, 0.945244, 0.264754, -0.728628, -0.317138, 0.607062, -4.30898, -1.03325, 37.9624)
+mesh = ExtResource("13_htxhm")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="cheese" type="MeshInstance3D" parent="interactions"]
+transform = Transform3D(0.833809, 0.0790895, 0.546357, -0.174088, 0.976857, 0.124273, -0.523884, -0.198734, 0.828281, -5.67768, 1.90469, 65.481)
+mesh = ExtResource("14_jq2sk")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="chest" type="MeshInstance3D" parent="interactions"]
+transform = Transform3D(-0.337749, -0.16526, -0.926615, 0.0122589, 0.98361, -0.179894, 0.941157, -0.0721181, -0.330187, 2.91976, -0.456735, 61.245)
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="GameObjectSmPropChest01" type="MeshInstance3D" parent="interactions/chest"]
+mesh = ExtResource("15_4k2k6")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="GameObjectSmPropChestLid01" type="MeshInstance3D" parent="interactions/chest"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0133145, 0.380618, -0.352825)
+mesh = ExtResource("16_0rl1p")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="pumpkin" type="MeshInstance3D" parent="interactions"]
+transform = Transform3D(0.755533, 0.0727176, -0.651062, 0, 0.99382, 0.111001, 0.65511, -0.0838647, 0.750864, -6.95818, 1.90469, 65.1314)
+mesh = ExtResource("17_ok6jj")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="scroll" type="MeshInstance3D" parent="interactions"]
+transform = Transform3D(-0.858683, 0.127802, 0.496317, 0, 0.968409, -0.249366, -0.512508, -0.214126, -0.831556, -6.43238, 2.02074, 65.4187)
+mesh = ExtResource("18_facbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="statue" type="MeshInstance3D" parent="interactions"]
+transform = Transform3D(-1.15857, 0, -2.23006, 0, 2.51305, 0, 2.23006, 0, -1.15857, -5.6249, -1.31531, 44.6058)
+mesh = ExtResource("19_b1qrp")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="sacks" type="MeshInstance3D" parent="interactions"]
+transform = Transform3D(-0.984286, 0, -1.00382, 0, 1.40587, 0, 1.00382, 0, -0.984286, -6.1433, -0.431703, 41.0285)
+skeleton = NodePath("GameObjectSmPropSack01")
+
+[node name="GameObjectSmPropSack01" type="MeshInstance3D" parent="interactions/sacks"]
+transform = Transform3D(0.147982, 0, 0.98899, 0, 1, 0, -0.98899, 0, 0.147982, 0.205367, -0.400751, -0.139542)
+mesh = ExtResource("20_come4")
+skeleton = NodePath("../../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="GameObjectSmPropSack02" type="MeshInstance3D" parent="interactions/sacks"]
+transform = Transform3D(1, 0, 0, 0, 0.998071, -0.0620763, 0, 0.0620763, 0.998071, -0.192253, -0.256032, 0.0568695)
+mesh = ExtResource("21_h8e4i")
+skeleton = NodePath("../../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="GameObjectSmPropSack03" type="MeshInstance3D" parent="interactions/sacks"]
+transform = Transform3D(1, 0, 0, 0, 0.745197, 0.666845, 0, -0.666845, 0.745197, -0.174641, -0.0168331, -0.116741)
+mesh = ExtResource("22_4lmeg")
+skeleton = NodePath("../../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="zweihander" type="MeshInstance3D" parent="interactions"]
+transform = Transform3D(-2.53772, 0.749105, 0, -0.749105, -2.53772, 0, 0, 0, 2.64597, -1.77929, 1.82471, 62.5932)
+mesh = ExtResource("23_0cp0l")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="pickaxe" type="MeshInstance3D" parent="interactions"]
+transform = Transform3D(-0.447751, -0.186298, -0.874535, 0.48408, -0.872831, -0.0619075, -0.751788, -0.451064, 0.480995, 1.51724, 0.0697967, 62.6816)
+mesh = ExtResource("24_d2t1y")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/Node3D")
+
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5256, 0, 31.6143)
+script = ExtResource("25_gngh3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+shape = SubResource("CapsuleShape3D_0n3wm")
+
+[node name="Head" type="Node3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.893065, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player/Head"]
+transform = Transform3D(-0.901968, 0, -0.431802, 0, 1, 0, 0.431802, 0, -0.901968, 0, 1.34702, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(2.2362, 0, -0.316494, 0, 1, 0, 0.746096, 0, 0.948595, -4.98481, -0.313085, 62.4553)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_0odxb")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="."]
+transform = Transform3D(2.2362, 0, -0.316494, 0, 1, 0, 0.746096, 0, 0.948595, -5.36308, 0.331631, 63.589)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2"]
+shape = SubResource("BoxShape3D_0odxb")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="."]
+transform = Transform3D(2.2362, 0, -0.316494, 0, 1, 0, 0.746096, 0, 0.948595, -5.73594, 0.626093, 64.68)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3"]
+shape = SubResource("BoxShape3D_0odxb")
